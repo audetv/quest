@@ -1,5 +1,16 @@
 $audetv_quest_person_spaces $mol_page
-	person $audetv_quest_person /
-		<= land $hyoo_crowd_land
-		null
-	body / \Hello
+	person $audetv_quest_person 
+		/
+			<= land $hyoo_crowd_land
+			null
+		space_add => space_add
+	title @ \Spaces
+	tools /
+		<= Space_add $mol_button_major
+			click <=> space_add
+			sub / <= Space_add_icon $mol_icon_plus
+	body /
+		<= Space_list $mol_list rows <= space_list /
+			<= Space*0 $mol_link
+				arg * space <= space_id* \
+				title <= space_title* \
