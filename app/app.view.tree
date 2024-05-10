@@ -4,7 +4,8 @@ $audetv_quest_app $mol_book2
 		<= home $hyoo_crowd_land
 		null
 	pages / 
-		<= Spaces $audetv_quest_space_page
+		<= Spaces $audetv_quest_person_spaces
+			person <= user
 			foot /
 				<= Online $hyoo_sync_online
 					yard <= yard
