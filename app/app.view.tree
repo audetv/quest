@@ -1,8 +1,9 @@
-$audetv_quest_app $mol_page
+$audetv_quest_app $mol_book2
 	yard $hyoo_sync_client
-	- space $audetv_quest_space
-	body / \Hello
-	foot /
-		<= Online $hyoo_sync_online
-			yard <= yard
+	user $audetv_quest_person
+	pages / 
+		<= Spaces $audetv_quest_space_page
+			foot /
+				<= Online $hyoo_sync_online
+					yard <= yard
 
