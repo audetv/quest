@@ -38,13 +38,17 @@ namespace $ {
 		// добавляем space
 		@$mol_action
 		space_add() {
-			return this.space_fund().make()
+			const obj = this.space_fund().make()
+			// берем ноду, которая хранит список 
+			// и добавляем туда айдишник только что созданного space
+			this.spaces_node().add( obj.land.id() )
+			// возвращаем созданный space
 		}
 
 		// удаляем space
 		@$mol_action
 		space_drop( obj: $audetv_quest_space) {
-			this.spaces_node().drop( obj.head )
+			this.spaces_node().drop( obj.land.id() )
 		}
 
 	}
