@@ -1,8 +1,5 @@
 $audetv_quest_person_spaces $mol_page
-	person $audetv_quest_person 
-		/
-			<= land $hyoo_crowd_land
-			null
+	person $audetv_quest_person
 		space_add => space_add
 	title @ \Spaces
 	tools /
