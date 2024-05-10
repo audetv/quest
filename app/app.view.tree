@@ -1,10 +1,12 @@
 $audetv_quest_app $mol_book2
 	yard $hyoo_sync_client
 	user $audetv_quest_person
-	pages / 
+	pages /
 		<= Spaces $audetv_quest_person_spaces
 			person <= user
 			foot /
 				<= Online $hyoo_sync_online
 					yard <= yard
+		<= Tasks $audetv_quest_space_tasks
+			space <= space $audetv_quest_space
 
