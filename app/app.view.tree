@@ -1,8 +1,6 @@
 $audetv_quest_app $mol_book2
 	yard $hyoo_sync_client
-	user $audetv_quest_person /
-		<= home $hyoo_crowd_land
-		null
+	user $audetv_quest_person
 	pages / 
 		<= Spaces $audetv_quest_person_spaces
 			person <= user
